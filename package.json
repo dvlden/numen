@@ -1,0 +1,41 @@
+{
+  "name": "@dvlden/numen",
+  "description": "Get the length of a numerical value.",
+  "keywords": [
+    "count",
+    "size",
+    "length",
+    "number",
+    "numeric",
+    "float"
+  ],
+  "version": "1.0.0",
+  "main": "dist/numen.js",
+  "module": "dist/numen.mjs",
+  "typings": "dist/numen.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "rollup --config rollup.config.ts --configPlugin typescript",
+    "test": "vitest"
+  },
+  "repository": "github:dvlden/numen",
+  "author": {
+    "name": "Nenad Novaković",
+    "email": "n.dvlden@gmail.com",
+    "url": "https://dvl.sh/"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@7.11.0",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.5.0",
+    "esbuild": "^0.15.10",
+    "rollup": "^2.79.1",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-esbuild": "^4.10.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4",
+    "vitest": "^0.24.0"
+  }
+}
