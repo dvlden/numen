@@ -1,7 +1,10 @@
-import { main, module, typings } from './package.json'
 import { defineConfig, RollupOptions } from 'rollup'
 import dts from 'rollup-plugin-dts'
 import esbuild from 'rollup-plugin-esbuild'
+
+const { main, module, typings } = await import('./package.json', {
+  assert: { type: 'json' }
+}).then(m => m.default)
 
 const bundle = (config: RollupOptions) => ({
   input: 'src/index.ts',
